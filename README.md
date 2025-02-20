@@ -21,74 +21,40 @@ The **Infotainment System** is an Embedded Linux project developed as part of th
 - Traffic Sign Recognition using AI model Computer Vision YOLO V.8 (nano version)
 - Interactive UI on a touch screen
 
+## 🚀 Running the Application over Raspbian OS  
+Follow these steps to run the application on **Raspbian OS** for Raspberry Pi 5:  
 
-## Building the Yocto Image
-Follow these steps to build and deploy the custom Yocto image for the Raspberry Pi 5.
-
-### Step 1: Install Yocto Build Environment
-1. Install necessary packages for your development environment:
+1. **Set up the application dependencies:**  
+   - Install the following packages and modules:
+     - `python3`
+     - `qt5`
+     - `cv2`
+     - `sys`
+     - `os`
+     - YOLO version 8 (nano)
+     - `ultralytics`
+     - `requests`  
+   
+   You can install the required Python packages using `pip`:
+   **Install `pip`:**  
+   - Update the package list and install `pip` for Python 3:
    ```bash
-   sudo apt-get update && sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath socat libsdl1.2-dev xterm
+   sudo apt update
+   sudo apt install python3-pip
    ```
-2. Download the Yocto Project source:
    ```bash
-   git clone git://git.yoctoproject.org/poky
-   cd poky
-   ```
-
-### Step 2: Configure the Build
-1. Check out the latest branch compatible with Raspberry Pi 5:
-   ```bash
-   git checkout kirkstone
-   ```
-2. Initialize the environment:
-   ```bash
-   source oe-init-build-env
-   ```
-
-### Step 3: Layer Configuration
-1. Add necessary layers for Raspberry Pi support:
-   ```bash
-   bitbake-layers add-layer meta-raspberrypi
-   ```
-2. Update the `conf/local.conf` file with the following:
-   ```plaintext
-   MACHINE = "raspberrypi5"
+   pip install opencv-python-headless ultralytics requests
    ```
 
-### Step 4: Build the Image
-1. Run the Yocto build command:
-   ```bash
-   bitbake core-image-sato
-   ```
-
-### Step 5: Flash the Image
-1. Use `dd` to write the image to an SD card:
-   ```bash
-   sudo dd if=core-image-sato-raspberrypi5.rpi-sdimg of=/dev/sdX bs=4M
-   ```
-
-2. Insert the SD card into the Raspberry Pi and power it on.
-
-### Step 6: Upload Code to Raspberry Pi
-1. Use `scp` to upload code to the Raspberry Pi:
-   ```bash
-   scp your_code.py pi@raspberrypi.local:/home/pi/
-   ```
-
-2. SSH into the Raspberry Pi to run the code:
-   ```bash
-   ssh pi@raspberrypi.local
-   python3 /home/pi/your_code.py
-   ```
+### 💡 Hint: We also ran the application using our **customized Yocto image**. You can find the detailed steps in the [Yocto Directory](#repository-structure).  
 
 ## Repository Structure
 ```
 📂 Infotainment-System
 ├── 📁 Yocto
 │   ├── README.md
-│   ├── build_instructions.md
-├── 📁 Sourc code
+│   ├── 📁 image.zip
+├── 📁 Source code
 │   ├── mainApp.py
 │   ├── software_architecutre.md
 ├── 📁 Hardware
