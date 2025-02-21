@@ -6,13 +6,13 @@
 The **Infotainment System** is an Embedded Linux project developed as part of the **Embedded Linux Scholarship** by **AMIT** and **Orange Digital Center (ODC)**. This project showcases building a custom **Yocto-based Linux distribution** for the **Raspberry Pi 5** with various hardware peripherals.
 
 ## Hardware Components
-- ![Raspberry Pi Icon](https://img.icons8.com/color/48/000000/raspberry-pi.png) **Raspberry Pi 5** with 8GB RAM
+![Raspberry Pi Icon](https://img.icons8.com/color/48/000000/raspberry-pi.png) **Raspberry Pi 5** with 8GB RAM
   
-- ![LED Icon](https://img.icons8.com/color/48/000000/led-diode.png) **LED as Light Indicator**
+![LED Icon](https://img.icons8.com/color/48/000000/led-diode.png) **LED as Light Indicator**
 
-- ![Relay Icon](https://img.icons8.com/fluency/48/000000/relay.png) **Relay-controlled Fan** (represented by a Yellow LED)
+![Relay Icon](https://img.icons8.com/fluency/48/000000/relay.png) **Relay-controlled Fan** (represented by a Yellow LED)
 
-- ![Touchscreen Icon](https://img.icons8.com/color/48/000000/touchscreen-smartphone.png) **Touch Screen** (800x480 pixels, driver included with Raspbian OS)
+![Touchscreen Icon](https://img.icons8.com/color/48/000000/touchscreen-smartphone.png) **Touch Screen** (800x480 pixels, driver included with Raspbian OS)
 
 ## Project Features
 - Custom Linux image built using **Yocto**
