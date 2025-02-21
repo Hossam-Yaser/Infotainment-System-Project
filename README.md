@@ -1,6 +1,6 @@
 # Infotainment System
 
-![Raspberry Pi Icon](https://img.icons8.com/color/48/000000/raspberry-pi.png) ![Embedded Linux Icon](https://img.icons8.com/color/48/000000/linux.png) ![Yocto Project Icon](./images/Yocto-Project.png)
+![Raspberry Pi Icon](https://img.icons8.com/color/48/000000/raspberry-pi.png) ![Embedded Linux Icon](https://img.icons8.com/color/48/000000/linux.png) ![Yocto Project Icon](./images/Yocto-Project.jpg)
 
 ## Project Overview
 The **Infotainment System** is an Embedded Linux project developed as part of the **Embedded Linux Scholarship** by **AMIT** and **Orange Digital Center (ODC)**. This project showcases building a custom **Yocto-based Linux distribution** for the **Raspberry Pi 5** with various hardware peripherals.
